@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script/script.js"></script>
+    <title>tailwind</title>
+  </head>
+  <body>
+    <main>
+      <nav
+        class="bg-red-500 sm:bg-blue-500 md:bg-green-500 px-10 py-3 text-lg text-white"
+      >
+        nav
+      </nav>
+      <section>
+        <!-- flex -->
+        <div class="flex gap-4 my-4 w-full overflow-auto">
+          <img
+            class="h-[250px] w-[400px]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+            alt=""
+          /><img
+            class="h-[250px] w-[400px]"
+            src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg"
+            alt=""
+          /><img
+            class="h-[250px] w-[400px]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+            alt=""
+          /><img
+            class="h-[250px] w-[400px]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+            alt=""
+          /><img
+            class="h-[250px] w-[400px]"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+            alt=""
+          />
+        </div>
+
+        <!-- grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <img
+            class="object-cover w-full min-h-[300px] h-full"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+            alt=""
+          /><img
+            class="object-cover w-full min-h-[300px] h-full"
+            src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg"
+            alt=""
+          /><img
+            class="object-cover w-full min-h-[300px] h-full"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+            alt=""
+          /><img
+            class="object-cover w-full h-[300px] lg:col-span-3"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+            alt=""
+          />
+        </div>
+        <div class="grid-cols-3 gap-4 mx-5 grid my-10">
+          <div class="group">
+            <div class="h-[300px] overflow-hidden">
+              <img
+                class="object-cover w-full h-full group-hover:scale-105 duration-300"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+                alt=""
+              />
+            </div>
+            <div class="flex justify-between">
+              <h1 class="text-lg text-gray-800 capitalize font-semibold">
+                me me
+              </h1>
+              <p>rs 900</p>
+            </div>
+            <p class="line-clamp-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              ratione, laboriosam, molestias quasi porro rem eveniet nemo ex
+              repellat ea fugit vel est nam a sequi deserunt, maxime doloremque
+              incidunt.
+            </p>
+          </div>
+        </div>
+        <div class="p-10">
+          <input
+            type="text"
+            placeholder="name"
+            class="border border-gray-500 py-2 px-4 rounded-full active:border-blue-500 shadow-lg text-gray-800 outline-none"
+          />
+          <button
+            class="bg-gray-300 px-4 py-2 rounded-md active:bg-gray-500 focus:bg-blue-500"
+          >
+            Click me
+          </button>
+        </div>
+      </section>
+      <footer>foot</footer>
+    </main>
+  </body>
+</html>
