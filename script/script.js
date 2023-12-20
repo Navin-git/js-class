@@ -13,6 +13,10 @@ const list = [
     },
   ],
 ];
+// additional data type
+let a = null;
+let b = undefined;
+let c = false;
 const detail = {
   name: "jubin",
   class: 11,
@@ -84,3 +88,67 @@ const stdList = [
     ],
   },
 ];
+
+let fname = null;
+let username = "";
+// let nub = 1;
+// let sub = "1";
+
+// console.log(nub + sub);
+
+// if else use case
+
+// if (username) {
+//   alert(`Welcome ${username}`);
+// } else if (fname) {
+//   alert(`welcome user ${fname}`);
+// } else {
+//   alert(`welcome user`);
+// }
+
+// username
+//   ? alert(`Welcome ${username}`)
+//   : fname
+//   ? alert(`Welcome ${fname}`)
+//   : alert(`welcome user`);
+
+// value which return false
+
+console.log(
+  Boolean(0),
+  "0",
+  Boolean(""),
+  "empty string",
+  Boolean(null),
+  "null",
+  Boolean(undefined),
+  "undefined",
+  Boolean(NaN),
+  "NaN",
+  Boolean(false),
+  "false"
+);
+
+let s = 6;
+
+if (s % 2 == 0) {
+  console.log("even");
+} else {
+  console.log("odd");
+}
+
+// === check type and value while == check value only
+
+// let sad = "111";
+// let dad = 111;
+// if (sad === dad) {
+//   console.log("equal");
+// } else {
+//   console.log("not");
+// }
+
+// let obj = {
+//   name: "das",
+//   age: 21,
+// };
+// console.log(obj?.age, "age");
