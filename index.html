@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script/function.js"></script>
+    <!-- <script src="./script/function.js"></script> -->
     <!-- <script src="./script/loop.js"></script> -->
-    <title>tailwind</title>
+    <title>tailwind + JS</title>
   </head>
   <body>
     <main>
@@ -63,7 +63,49 @@
           />
         </div>
         <div class="grid-cols-3 gap-4 mx-5 grid my-10">
-          <div class="group">
+          <div class="group card">
+            <div class="h-[300px] overflow-hidden">
+              <img
+                class="object-cover w-full h-full group-hover:scale-105 duration-300"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+                alt=""
+              />
+            </div>
+            <div class="flex justify-between">
+              <h1 class="text-lg text-gray-800 capitalize font-semibold">
+                me me
+              </h1>
+              <p>rs 900</p>
+            </div>
+            <p class="line-clamp-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              ratione, laboriosam, molestias quasi porro rem eveniet nemo ex
+              repellat ea fugit vel est nam a sequi deserunt, maxime doloremque
+              incidunt.
+            </p>
+          </div>
+          <div class="group card">
+            <div class="h-[300px] overflow-hidden">
+              <img
+                class="object-cover w-full h-full group-hover:scale-105 duration-300"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+                alt=""
+              />
+            </div>
+            <div class="flex justify-between">
+              <h1 class="text-lg text-gray-800 capitalize font-semibold">
+                me me
+              </h1>
+              <p>rs 900</p>
+            </div>
+            <p class="line-clamp-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              ratione, laboriosam, molestias quasi porro rem eveniet nemo ex
+              repellat ea fugit vel est nam a sequi deserunt, maxime doloremque
+              incidunt.
+            </p>
+          </div>
+          <div class="group card">
             <div class="h-[300px] overflow-hidden">
               <img
                 class="object-cover w-full h-full group-hover:scale-105 duration-300"
@@ -101,5 +143,6 @@
       </section>
       <footer>foot</footer>
     </main>
+    <script src="./script/dom.js"></script>
   </body>
 </html>
