@@ -12,18 +12,23 @@
   <body>
     <main>
       <nav
-        class="bg-red-500 sm:bg-blue-500 md:bg-green-500 px-10 py-3 text-lg text-white"
+        class="bg-red-500 sm:bg-blue-500 md:bg-green-500 px-10 py-3 text-lg text-white flex justify-between"
       >
-        nav
+        <div>nav</div>
+        <div class="relative">
+          <button id="more" onclick="drop()">more</button>
+          <div
+            id="drop-cont"
+            class="absolute top-full right-0 bg-white p-2 text-black rounded-md hidden"
+          >
+            hello
+          </div>
+        </div>
       </nav>
       <section>
         <!-- flex -->
         <div class="flex gap-4 my-4 w-full overflow-auto">
-          <img
-            class="h-[250px] w-[400px]"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
-            alt=""
-          /><img
+          <img class="h-[250px] w-[400px]" id="fimg" alt="sdfsdfdsf" /><img
             class="h-[250px] w-[400px]"
             src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg"
             alt=""
@@ -62,87 +67,29 @@
             alt=""
           />
         </div>
-        <div class="grid-cols-3 gap-4 mx-5 grid my-10">
-          <div class="group card">
-            <div class="h-[300px] overflow-hidden">
-              <img
-                class="object-cover w-full h-full group-hover:scale-105 duration-300"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between">
-              <h1 class="text-lg text-gray-800 capitalize font-semibold">
-                me me
-              </h1>
-              <p>rs 900</p>
-            </div>
-            <p class="line-clamp-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              ratione, laboriosam, molestias quasi porro rem eveniet nemo ex
-              repellat ea fugit vel est nam a sequi deserunt, maxime doloremque
-              incidunt.
-            </p>
-          </div>
-          <div class="group card">
-            <div class="h-[300px] overflow-hidden">
-              <img
-                class="object-cover w-full h-full group-hover:scale-105 duration-300"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between">
-              <h1 class="text-lg text-gray-800 capitalize font-semibold">
-                me me
-              </h1>
-              <p>rs 900</p>
-            </div>
-            <p class="line-clamp-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              ratione, laboriosam, molestias quasi porro rem eveniet nemo ex
-              repellat ea fugit vel est nam a sequi deserunt, maxime doloremque
-              incidunt.
-            </p>
-          </div>
-          <div class="group card">
-            <div class="h-[300px] overflow-hidden">
-              <img
-                class="object-cover w-full h-full group-hover:scale-105 duration-300"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
-                alt=""
-              />
-            </div>
-            <div class="flex justify-between">
-              <h1 class="text-lg text-gray-800 capitalize font-semibold">
-                me me
-              </h1>
-              <p>rs 900</p>
-            </div>
-            <p class="line-clamp-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              ratione, laboriosam, molestias quasi porro rem eveniet nemo ex
-              repellat ea fugit vel est nam a sequi deserunt, maxime doloremque
-              incidunt.
-            </p>
-          </div>
-        </div>
+        <section
+          id="card-list"
+          class="grid-cols-3 gap-4 mx-5 grid my-10"
+        ></section>
         <div class="p-10">
           <input
-            type="text"
             id="search"
+            type="text"
             placeholder="name"
             class="border border-gray-500 py-2 px-4 rounded-full active:border-blue-500 shadow-lg text-gray-800 outline-none"
           />
           <button
-            class="bg-gray-300 px-4 py-2 rounded-md active:bg-gray-500 focus:bg-blue-500"
+            onclick="focus()"
+            tabindex="1"
+            class="bg-gray-300 px-4 py-2 bg-gray-300 rounded-md active:bg-gray-500 focus:bg-blue-500"
           >
             Click me
           </button>
         </div>
+        <p onmouseover="parahover()" id="para"></p>
       </section>
       <footer>foot</footer>
     </main>
-    <script src="./script/dom.js"></script>
+    <script src="./script/dom.js" defer></script>
   </body>
 </html>
