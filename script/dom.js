@@ -1,10 +1,10 @@
 const search = document.getElementById("search");
-search.addEventListener("change", (e) => {
-  alert("dsa");
-});
-// search.value = "tv";
+// search.addEventListener("change", (e) => {
+//   alert("dsa");
+// });
+search.value = "tv";
 // // search.disabled = true;
-// search.style.backgroundColor = "wheat";
+search.style.backgroundColor = "wheat";
 
 const searchChange = () => {
   console.log("sdaf");
@@ -62,11 +62,11 @@ list.forEach((item) => {
   </div>`;
 });
 
-// const cards = document.getElementsByClassName("card");
-// // cards[0].style.backgroundColor = "gray";
-// for (let i = 0; i < cards.length; i++) {
-//   cards[i].style.backgroundColor = "gray";
-// }
+const cards = document.getElementsByClassName("card");
+// cards[0].style.backgroundColor = "gray";
+for (let i = 0; i < cards.length; i++) {
+  cards[i].style.backgroundColor = "gray";
+}
 
 let drop_cont = document.getElementById("drop-cont");
 let isDrop = false;

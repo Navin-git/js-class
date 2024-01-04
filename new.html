@@ -4,12 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script/nav.js" defer></script>
   </head>
   <body>
-    <form action="" onsubmit="naa()">
-      <input type="text" id="search" onchange="dsaf()" />
-      <button type="submit">save</button>
-    </form>
-    <script src="./script/dom.js"></script>
+    <nav
+      class="px-[5%] py-[16px] flex items-center gap-[50px] justify-between md:justify-start lg:gap-[96px]"
+    >
+      <svg
+        width="56"
+        height="56"
+        viewBox="0 0 56 56"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.7313 22.2207L26.33 0.835815V27.0267H26.3284H0L21.7313 22.2207Z"
+          fill="#01A9F0"
+        />
+        <path
+          d="M21.3849 33.8524L0 29.2537H26.3284V55.5821L21.3849 33.8524Z"
+          fill="#24BE67"
+        />
+        <path
+          d="M33.8525 34.1972L29.2538 55.5821V29.2537H55.5821L33.8525 34.1972Z"
+          fill="#24BE67"
+        />
+        <path
+          d="M34.1972 22.3582L55.5821 26.9568H29.2538V0.835815L34.1972 22.3582Z"
+          fill="#01A9F0"
+        />
+      </svg>
+      <div class="hidden md:flex items-center gap-[25px] lg:gap-[48px]">
+        <a href="" class="font-semibold text-[#01A9F0]">Home</a>
+        <a href="" class="text-[#0F110C]">Our services</a>
+        <a href="" class="text-[#0F110C]">How it works</a>
+        <a href="" class="text-[#0F110C]">About NDIS</a>
+        <a href="" class="text-[#0F110C]">About us</a>
+        <a href="" class="text-[#0F110C]">Contact us</a>
+      </div>
+      <div class="md:hidden relative">
+        <button onclick="drop()" class="text-[#0F110C]">
+          <svg
+            data-slot="icon"
+            class="h-5 w-5"
+            fill="none"
+            stroke-width="1.5"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            ></path>
+          </svg>
+        </button>
+        <div
+          id="menu"
+          class="hidden flex-col absolute top-full min-w-[150px] p-2 border rounded-md right-0 whitespace-nowrap gap-1 bg-slate-100"
+        >
+          <a href="" class="font-semibold text-[#01A9F0]">Home</a>
+          <a href="" class="text-[#0F110C]">Our services</a>
+          <a href="" class="text-[#0F110C]">How it works</a>
+          <a href="" class="text-[#0F110C]">About NDIS</a>
+          <a href="" class="text-[#0F110C]">About us</a>
+          <a href="" class="text-[#0F110C]">Contact us</a>
+        </div>
+      </div>
+    </nav>
+    <div class="h-[500px] w-full bg-gray-300"></div>
   </body>
 </html>
